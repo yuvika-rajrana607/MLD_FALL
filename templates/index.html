@@ -16,17 +16,17 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="stage" placeholder="Cancer_Stage" required="required" />
+    	<input type="text" name="stage" placeholder="Cancer Stage" required="required" />
       <input type="text" name="age" placeholder="Age" required="required" />
-		  <input type="text" name="family_history" placeholder="Family_History" required="required" />
-      <input type="text" name="previous_cancer" placeholder="Had_Cancer_Before?" required="required" />
+      <input type="text" name="family_history" placeholder="Family History" required="required" />
+      <input type="text" name="previous_cancer" placeholder="Had Cancer Before?" required="required" />
       <input type="text" name="smoker" placeholder="Smoker" required="required" />
-      <input type="text" name="diff_tumor" placeholder="Tumor_Size_Diff_1yr" required="required" />
-      <input type="text" name="diff_psa" placeholder="Prostrate_Specific_Antigen_Diff_1yr" required="required" />
-      <input type="text" name="tea" placeholder="Tea_Consumption" required="required" />
-      <input type="text" name="rd_thrpy" placeholder="Radiotherapy_Used" required="required" />
-      <input type="text" name="chm_thrpy" placeholder="Chemotherapy_Used" required="required" />
-      <input type="text" name="rad_rem" placeholder="Had_Surgery" required="required" />
+      <input type="text" name="diff_tumor" placeholder="Tumor Size Difference" required="required" />
+      <input type="text" name="diff_psa" placeholder="Prostrate Specific Antigen Difference after 1yr" required="required" />
+      <input type="text" name="tea" placeholder="Daily Tea Consumption" required="required" />
+      <input type="text" name="rd_thrpy" placeholder="Radiotherapy" required="required" />
+      <input type="text" name="chm_thrpy" placeholder="Chemotherapy" required="required" />
+      <input type="text" name="rad_rem" placeholder="Surgery" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
